@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack -p",
-    "installbuild": "npm install --prefix node_modules && npm run build"
+    "installbuild": "npm install --prefix node_modules"
   },
   "keywords": [],
   "author": "John Craig",
