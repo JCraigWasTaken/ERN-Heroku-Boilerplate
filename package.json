@@ -11,7 +11,8 @@
     "build": "npm run build --prefix dev",
     "backendStart": "nodemon server.js",
     "frontendStart": "npm run start --prefix dev",
-    "dev": "concurrently \"npm run backendStart\" \"npm run frontendStart\""
+    "dev": "concurrently \"npm run backendStart\" \"npm run frontendStart\"",
+    "heroku-postbuild": "cd dev && npm run installbuild"
   },
   "repository": {
     "type": "git",

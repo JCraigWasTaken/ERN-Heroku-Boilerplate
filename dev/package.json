@@ -5,16 +5,13 @@
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "installbuild": "npm install && npm run build"
   },
   "keywords": [],
   "author": "John Craig",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
-  "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-transform-runtime": "^7.7.4",
@@ -25,9 +22,13 @@
     "css-loader": "^3.2.1",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "style-loader": "^1.0.1",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
     "webpack-dev-server": "^3.9.0"
   }
 }
