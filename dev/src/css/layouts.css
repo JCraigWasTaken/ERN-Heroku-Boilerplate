@@ -1,0 +1,123 @@
+/*Parent Child Layouts*/
+
+.container{
+    height: auto;
+    position: relative;
+    width:100%;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_spaceBetween{
+    justify-content: space-between;
+}
+
+.flex_spaceEvenly{
+    justify-content: space-evenly;
+}
+
+.flex_spaceCenter{
+    justify-content: center;
+}
+
+.flex_spaceStart{
+    justify-content: flex-start
+}
+
+.flex_stretch{
+    align-items: stretch;
+}
+
+.flex_center{
+    align-items: center;
+}
+
+.flex_start{
+    align-items: flex-start;
+}
+
+/*Margins and Padding*/
+
+.margin_vertical25{
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+.margin_vertical50{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.margin_vertical100{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+.margin_horizontal8{
+    margin-left:8%;
+    margin-right:8%;
+}
+
+.margin_horizontal4{
+    margin-left:4%;
+    margin-right:4%;
+}
+
+.margin_horizontal2{
+    margin-left:2%;
+    margin-right:2%;
+}
+
+.margin10{
+    margin:10px;
+}
+
+.margin5{
+    margin:5px;
+}
+
+.padding_vertical25{
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.padding_vertical50{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.padding_vertical100{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.padding_horizontal8{
+    padding-left:8%;
+    padding-right:8%;
+}
+
+.padding_horizontal4{
+    padding-left:4%;
+    padding-right:4%;
+}
+
+.padding_horizontal2{
+    padding-left:2%;
+    padding-right:2%;
+}
+
+.padding10{
+    padding:10px;
+}
+
+.padding5{
+    padding:5px;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "ERN-Heroku-BuildPack",
+  "version": "1.0.0",
+  "description": "This is a buildpack for an app using Electron, React and Node. If a heroku app is attached to a project using this repo it will be able to be automatically built on a master branch update.",
+  "main": "server.js",
+  "engines": {
+    "node": "13.3.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm run build --prefix dev",
+    "backendStart": "nodemon server.js",
+    "frontendStart": "npm run start --prefix dev",
+    "dev": "concurrently \"npm run backendStart\" \"npm run frontendStart\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonof/ERN-Heroku-BuildPack.git"
+  },
+  "keywords": [],
+  "author": "John Craig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonof/ERN-Heroku-BuildPack/issues"
+  },
+  "homepage": "https://github.com/jhonof/ERN-Heroku-BuildPack#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.1"
+  }
+}
