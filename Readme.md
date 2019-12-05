@@ -4,7 +4,7 @@
 Navigate to the root of the directory and run “npm run dev”. Hit cmd c to end the backend and frontend processes
 
 #Build Testing
-Navigate to the root of the directory and run “npm run build && node server.js”. navigate to localhost:XXXX and you should see the application. Hit cmd c to end server.js.
+Navigate to the root of the directory and run “npm run build && node server.js”. navigate to localhost:5000 and you should see the application. Hit cmd c to end server.js.
 
 ##Version Control and Deployment 
 (see Github Flow https://guides.github.com/introduction/flow/)

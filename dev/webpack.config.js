@@ -20,6 +20,7 @@ module.exports = {
     mode:'development',
     plugins:[
         new HTMLWebPackPlugin({
+            favicon: 'img/favicon.png',
             template:'src/index.html'
         })
     ],
