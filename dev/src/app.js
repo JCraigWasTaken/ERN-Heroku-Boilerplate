@@ -28,7 +28,7 @@ class App extends React.Component{
                 id='appContents' 
                 className='color-background_primary color-text_primary'
                 style={{overflowY:'hidden'}}>
-                <p>Hello World</p>
+                <p>Hello Ali</p>
             </div>
         )
     }
