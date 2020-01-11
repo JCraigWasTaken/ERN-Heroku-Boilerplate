@@ -5,7 +5,7 @@
     "node": "13.3.0"
   },
   "scripts": {
-    "prodStart": "node .server.js",
+    "prodStart": "node server.js",
     "devBackendStart": "nodemon server.js"
   },
   "dependencies": {
