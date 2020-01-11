@@ -1,2 +1,4 @@
+./backend/node_modules
+./dev-frontend/node_modules
 node_modules
-prod
+prod-frontend

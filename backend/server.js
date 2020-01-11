@@ -5,10 +5,10 @@ const router = express();
 const port = process.env.PORT || 5000;
 
 if (process.env.NODE_ENV === "production"){
-    router.use(express.static("prod"));
+    router.use(express.static("prod-frontend"));
   
     router.get('*',(req,res) => {
-      res.sendFile(path.resolve(__dirname, "prod","index.html"))
+      res.sendFile(path.resolve(__dirname, "prod-frontend","index.html"))
     });
 }
 

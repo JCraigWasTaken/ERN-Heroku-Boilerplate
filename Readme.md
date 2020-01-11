@@ -1,10 +1,14 @@
 # Development and Testing Build
 
 ## Development
-Navigate to the root of the directory and run “npm run dev”. Hit cmd c to end the backend and frontend processes
+- Navigate to the root of the directory and run “npm run devStart”. Hit cmd c to end the backend and frontend processes
 
-## Build Testing
-Navigate to the root of the directory and run “npm run build && node server.js”. navigate to localhost:5000 and you should see the application. Hit cmd c to end server.js.
+- If you are testing new back-end routes, you must add the routes to the devServer/proxy section in the webpack.dev.js file. This allows the routes to be accessed in development mode.
+
+- A favicon can be added by specifiying the image in the webpack.common.js file in the plugins/HTMLWebPackPlugin section.
+
+## Installing Dependencies
+This boilerplate treats the React front-end, and Express back-end as seperate applications. Because of this, if you would like to install dependencies specific to the front-end or back-end you must first navigate to their respective folders.
 
 # Version Control and Deployment 
 (see Github Flow https://guides.github.com/introduction/flow/)

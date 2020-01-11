@@ -1,15 +1,10 @@
 {
-  "name": "dev",
+  "name": "frontendpackage",
   "version": "1.0.0",
-  "description": "frontend package.json",
-  "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack -p"
+    "prodBuild": "webpack --config ./buildEnvConfigs/webpack.prod.js",
+    "devFrontendStart": "webpack-dev-server --open --config ./buildEnvConfigs/webpack.dev.js"
   },
-  "keywords": [],
-  "author": "John Craig",
-  "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.7.4",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
@@ -18,6 +13,7 @@
     "@babel/preset-react": "^7.7.4",
     "@babel/runtime": "^7.7.4",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.1",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
@@ -25,7 +21,8 @@
     "react-dom": "^16.12.0",
     "style-loader": "^1.0.1",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.9.0"
