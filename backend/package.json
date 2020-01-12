@@ -1,0 +1,17 @@
+{
+  "name": "backendpackage",
+  "version": "1.0.0",
+  "engines": {
+    "node": "13.3.0"
+  },
+  "scripts": {
+    "prodStart": "node server.js",
+    "devBackendStart": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
