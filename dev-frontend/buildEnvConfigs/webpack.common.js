@@ -24,6 +24,7 @@ module.exports = {
     },
     output:{
         path:Path.resolve(__dirname,'../../prod-frontend'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/'
     }
 }
