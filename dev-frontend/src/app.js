@@ -1,13 +1,16 @@
 var React = require('react')
 var ReactDom = require('react-dom')
 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+
 import './app.css'
 
 class App extends React.Component{
-
-    constructor(props) {
-        super(props);
-    }
 
     openLink = (link) =>{
         const a = document.createElement('a');
@@ -24,12 +27,16 @@ class App extends React.Component{
 
     render(){
         return(
-            <div 
-                id='appContents' 
-                className='color-background_primary color-text_primary'
-                style={{overflowY:'hidden'}}>
-                <p>Hello World</p>
-            </div>
+            <Router>
+                <Switch>
+                    <Route exact path='/'>
+                        <h1>HomePage Here</h1>
+                    </Route>
+                    <Route path='/'>
+                        <h1>404 Here</h1>
+                    </Route>
+                </Switch>
+            </Router>
         )
     }
 }
