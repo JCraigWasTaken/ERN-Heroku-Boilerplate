@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === "production"){
     router.use(express.static(path.resolve(__dirname, "../prod-frontend")));
   
     router.get('*',(req,res) => {
-      res.sendFile(path.resolve("index.html"))
+      res.sendFile(path.resolve(__dirname, "../prod-frontend","index.html"))
     });
 }
 
