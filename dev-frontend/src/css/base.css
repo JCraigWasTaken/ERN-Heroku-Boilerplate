@@ -9,6 +9,14 @@
   max-height: 100000px;
 }
 
+.mouse, .mouse button:focus, .mouse input:focus, .mouse textarea:focus {
+  outline: 0;
+  -moz-box-shadow:    0px 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0;
+}
+
+
 /*Colors*/
 
 :root {
