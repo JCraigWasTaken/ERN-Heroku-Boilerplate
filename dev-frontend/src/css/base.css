@@ -96,11 +96,9 @@ a{
   font-family: Lato, sans-serif;
 }
 
-
 label{
   display: none;
 }
-
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #8d8d8d;
