@@ -11,23 +11,41 @@
 
 /*Colors*/
 
+:root {
+  --dominant_color: #FC6111;
+  --primary_dark: #293860;
+  --primary_light: #EEF4FA;
+  --secondary_light: #119CB9;
+  --secondary_dark: #1A707D;
+}
+
 .color-dominant{
-  background: #859573;
-  border-color: #859573;
+  background: var(--dominant_color);
+  border-color: var(--dominant_color);
+}
+.color-background_dominant{
+  background: var(--dominant_color);
+  border-color: var(--dominant_color);
 }
 .color-background_primary{
-  background: #f5f5f3;
-  border-color:  #f5f5f3;
+  background: var(--primary_light);
+  border-color:  var(--primary_light);
 }
 .color-background_secondary{
-  background: #27407F;
-  border-color: #27407F;
+  background: var(--secondary_light);
+  border-color: var(--secondary_light);
+}
+.color-text_dominant{
+  color: var(--dominant_color)
 }
 .color-text_primary{
-  color: #4d4c4c
+  color: var(--primary_dark)
 }
 .color-text_secondary{
-  color: #F5F5F3
+  color: var(--secondary_dark)
+}
+.color-text_light{
+  color: var(--primary_light)
 }
 
 /*Tags*/

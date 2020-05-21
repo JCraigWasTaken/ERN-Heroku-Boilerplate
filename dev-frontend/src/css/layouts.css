@@ -121,3 +121,52 @@
 .padding5{
     padding:5px;
 }
+
+/* For Desktop (over 1024px width)*/
+@media (min-width: 1025px){
+    .showTablet_HideDesktop, .showTablet_HideDesktop h1, .showTablet_HideDesktop h2, .showTablet_HideDesktop p{
+        opacity: 0 !important;
+        height: 0 !important;
+        width: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        flex: 0 !important;
+        font-size: 0 !important;
+    }
+}
+
+/* For Tablet and Desktop (minimum 768px width) */
+@media (min-width: 767px){
+
+}
+
+/* For Tablet (maximum  1024px width, minimum 768px width) */
+@media (min-width: 767px) and (max-width: 1024px){
+
+}
+/* For Tablet and Mobile (maximum  1024px width) */
+@media (max-width: 1024px){
+    .showDesktop_HideTablet,  .showDesktop_HideTablet h1, .showDesktop_HideTablet h2, .showDesktop_HideTablet p{
+        opacity: 0 !important;
+        height: 0 !important;
+        width: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        flex: 0 !important;
+        font-size: 0 !important;
+    }
+}
+
+/* For Mobile (under 768px width) */
+
+@media (max-width: 768px){
+    .showTablet_HideMobile,  .showTablet_HideMobile h1, .showTablet_HideMobile h2, .showTablet_HideMobile p{
+        opacity: 0 !important;
+        height: 0 !important;
+        width: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        flex: 0 !important;
+        font-size: 0 !important;
+    }
+}
