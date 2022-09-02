@@ -42,7 +42,6 @@ This boilerplate treats the React front-end, and Express back-end as seperate ap
 1. Ensure the route for the page is not already used in the front-end or the back-end
 2. Add a new route to the "Routes" section of backend/server.js
 3. Navigate to dev-frontend/buildEnvConfigs/webpack.dev.js and add a new key value pair to the devServer.proxy object. The key should be the endpoint with a leading "/, and the value should be "http://localhost:5000"
-4. Robots.txt ???
 
 ## Production build testing
 
