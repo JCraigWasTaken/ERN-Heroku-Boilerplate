@@ -1,10 +1,11 @@
 {
   "name": "ERN-Heroku-Boilerplate",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "This is a boilerplate for an app using Express, React and Node. If a heroku app is attached to a project using this repo it will be able to be automatically built on a master branch update.",
   "scripts": {
     "preinstall": "cd backend && npm install && cd .. && cd dev-frontend && npm install",
     "devStart": "concurrently \"cd backend && npm run devBackendStart\" \"cd dev-frontend && npm run devFrontendStart\"",
+    "testProdStart": "set NODE_ENV=production && npm run prodStart --prefix backend",
     "build": "npm run prodBuild --prefix dev-frontend",
     "start": "npm run prodStart --prefix backend"
   },
