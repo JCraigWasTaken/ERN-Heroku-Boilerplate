@@ -9,7 +9,7 @@
     "devBackendStart": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-limiter": "^1.6.1",
     "helmet": "^6.0.0",
     "redis": "^4.3.1"
